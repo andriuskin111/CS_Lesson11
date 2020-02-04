@@ -12,11 +12,14 @@ namespace UMS.test
         public void TestingConvertIntToString()
         {
             // Arrange
-            //ReportItem reportItem = new ReportItem();
+            RaportItem raportItem = new RaportItem(2, "Name", "FULLACCESS");
+            string expected = "2";
 
             // Act
+            string actual = raportItem.UserId;
 
             // Assert
+            Assert.AreEqual(expected, actual);
         }
     }
 }
