@@ -36,5 +36,11 @@ namespace UMSBusinesLayer
             string rights = userRights.RightsCode;
             return rights;
         }
+
+        public int GetRightsId()
+        {
+            int rightsId = userRights.RightsId;
+            return rightsId;
+        }
     }
 }

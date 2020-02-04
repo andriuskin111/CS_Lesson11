@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UMSBusinesLayer\UMSBusinesLayer.csproj">
+      <Project>{1c4442ce-e09f-4c9f-9210-abb4cc345d03}</Project>
+      <Name>UMSBusinesLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -51,6 +51,8 @@
   <ItemGroup>
     <Compile Include="UMSBusinesLayerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportItemTest.cs" />
+    <Compile Include="RaportGeneratorTest.cs" />
     <Compile Include="UserRepositoryTest.cs" />
     <Compile Include="UserTest.cs" />
   </ItemGroup>

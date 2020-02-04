@@ -14,9 +14,9 @@ namespace UMSBusinesLayer
         {
             _userList = new List<User>();
             _userList.Add(new User(1, new Rights(0), "Vasia"));
-            _userList.Add(new User(2, new Rights(0), "Katia"));
-            _userList.Add(new User(3, new Rights(0), "Vova"));
-            _userList.Add(new User(4, new Rights(0), "Kiril"));
+            _userList.Add(new User(2, new Rights(1), "Katia"));
+            _userList.Add(new User(3, new Rights(1), "Vova"));
+            _userList.Add(new User(4, new Rights(2), "Kiril"));
             _userList.Add(new User(5, new Rights(0), "Antanas"));
         }
 
