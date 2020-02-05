@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ND_11_Uzduotis3", "ND_11_Uzduotis3\ND_11_Uzduotis3.csproj", "{D8FE5F9E-A815-4A21-A67B-7ABB3B6B0E19}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicLayer", "LogicLayer\LogicLayer.csproj", "{DFCCD79F-E5E4-4F92-8208-2FA1BF7C4AD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ND_11_Uzduotis3.test", "ND_11_Uzduotis3.test\ND_11_Uzduotis3.test.csproj", "{A9BAC9AB-8EE4-43FF-8235-29F477470E15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{D8FE5F9E-A815-4A21-A67B-7ABB3B6B0E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8FE5F9E-A815-4A21-A67B-7ABB3B6B0E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8FE5F9E-A815-4A21-A67B-7ABB3B6B0E19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFCCD79F-E5E4-4F92-8208-2FA1BF7C4AD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFCCD79F-E5E4-4F92-8208-2FA1BF7C4AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFCCD79F-E5E4-4F92-8208-2FA1BF7C4AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFCCD79F-E5E4-4F92-8208-2FA1BF7C4AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9BAC9AB-8EE4-43FF-8235-29F477470E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9BAC9AB-8EE4-43FF-8235-29F477470E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9BAC9AB-8EE4-43FF-8235-29F477470E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9BAC9AB-8EE4-43FF-8235-29F477470E15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
