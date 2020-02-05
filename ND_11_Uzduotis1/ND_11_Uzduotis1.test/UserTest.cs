@@ -27,7 +27,7 @@ namespace ND_11_Uzduotis1.test
         {
             // Arrange
             User user = new User("Andrius", "Geniusas", new DateTime(2077, 03, 22));
-            int expected = -67;
+            int expected = -57;
 
             // Act
             int actual = user.GetAge();
