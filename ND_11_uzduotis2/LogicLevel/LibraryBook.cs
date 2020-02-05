@@ -13,12 +13,14 @@ namespace LogicLevel
         public int DaysToReturn { get; private set; }
         public string ReaderName { get; set; }
         public DateTime DateOfPickUp { get; set; }
+        public decimal DefaultInterest { get; private set; }
 
-        public LibraryBook(int bookId, string bookName, int daysToReturn)
+        public LibraryBook(int bookId, string bookName, int daysToReturn, decimal defaultInterest)
         {
             BookId = bookId;
             BookName = bookName;
             DaysToReturn = daysToReturn;
+            DefaultInterest = defaultInterest;
         }
 
         public bool CheckOrDelay()
@@ -37,6 +39,20 @@ namespace LogicLevel
 
 
             return delay;
+        }
+
+        public decimal GetDefaultInterest()
+        {
+            if(CheckOrDelay() == false)
+            {
+                return  0;
+            }
+            else
+            {
+                decimal defaultInterestTotal = (Convert.ToInt32((DateTime.Now - DateOfPickUp).TotalDays) - DaysToReturn) * DefaultInterest;
+
+                return defaultInterestTotal;
+            }
         }
     }
 }
