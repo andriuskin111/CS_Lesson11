@@ -12,6 +12,10 @@ namespace ND_11_Uzduotis3
         static void Main(string[] args)
         {
             Student student = new Student(1, "Vytas");
+            StudentRepository studentRepository = new StudentRepository();
+            List<Student> studentList = new List<Student>();
+
+            studentList = studentRepository.Retrieve();           
 
             student.markList.Add(8);
             student.markList.Add(10);
@@ -26,6 +30,16 @@ namespace ND_11_Uzduotis3
             }
 
             Console.WriteLine($"\nMarks Average: {student.GetMarkAverage()}");
+
+            foreach (var item in studentList)
+            {
+                Console.WriteLine($"Student Id: {item.StudentId}, Name: {item.StudentName}");
+            }
+
+            int id = 3;
+
+            Console.WriteLine($"Wanted Id: {studentRepository.Retrieve(id).StudentId}, " +
+                $"Name: {studentRepository.Retrieve(id).StudentName}");
 
             Console.ReadLine();
         }
