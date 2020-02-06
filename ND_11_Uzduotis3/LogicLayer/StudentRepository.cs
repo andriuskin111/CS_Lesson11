@@ -13,11 +13,11 @@ namespace LogicLayer
         public StudentRepository()
         {
             _students = new List<Student>();
-            _students.Add(new Student(1, "Vasia"));
-            _students.Add(new Student(2, "Petia"));
-            _students.Add(new Student(3, "Liolik"));
-            _students.Add(new Student(4, "Bolik"));
-            _students.Add(new Student(5, "Egle"));
+            _students.Add(new Student(1, "Vasia", false));
+            _students.Add(new Student(2, "Petia", false));
+            _students.Add(new Student(3, "Liolik", false));
+            _students.Add(new Student(4, "Bolik", false));
+            _students.Add(new Student(5, "Egle", true));
         }
 
         public Student Retrieve(int studentId)

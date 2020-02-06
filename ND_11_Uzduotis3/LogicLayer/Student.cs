@@ -10,12 +10,14 @@ namespace LogicLayer
     {
         public int StudentId { get; private set; }
         public string StudentName { get; private set; }
+        public bool OlympicsWinner { get; private set; }
         public List<int> markList;
 
-        public Student(int studentId, string studentName)
+        public Student(int studentId, string studentName, bool olympicsWinner)
         {
             StudentId = studentId;
             StudentName = studentName;
+            OlympicsWinner = olympicsWinner;
             markList = new List<int>();    
         }
 
