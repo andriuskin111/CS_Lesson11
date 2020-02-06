@@ -11,7 +11,7 @@ namespace ND_11_Uzduotis3.test
         public void TestMarkAverage()
         {
             // Arrange
-            Student student = new Student(1, "Vytas");
+            Student student = new Student(1, "Vytas", true);
 
             student.markList.Add(8);
             student.markList.Add(10);
@@ -31,7 +31,7 @@ namespace ND_11_Uzduotis3.test
         public void TestMarkAverageWhenMarkListEmpty()
         {
             // Arrange
-            Student student = new Student(1, "Vytas");
+            Student student = new Student(1, "Vytas", true);
 
             double expected = 0;
 
@@ -46,7 +46,7 @@ namespace ND_11_Uzduotis3.test
         public void TestMarkAverageWhenInMarkListIsOneMark()
         {
             // Arrange
-            Student student = new Student(1, "Vytas");
+            Student student = new Student(1, "Vytas", true);
 
             student.markList.Add(8);
 
